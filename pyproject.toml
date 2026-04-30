@@ -4,22 +4,41 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tokenfit"
-version = "0.1.0"
+version = "0.2.0"
 description = "Estimate token counts for LLM models without API calls"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [{name = "Vaibhav Deshmukh"}]
-keywords = ["python", "llm", "tokens", "tiktoken", "anthropic"]
+keywords = ["python", "llm", "tokens", "tiktoken", "anthropic", "openai", "gemini"]
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
 ]
 
 [project.urls]
 "Homepage" = "https://github.com/vdeshmukh203/tokenfit"
 "Source" = "https://github.com/vdeshmukh203/tokenfit"
+"Bug Tracker" = "https://github.com/vdeshmukh203/tokenfit/issues"
+"Changelog" = "https://github.com/vdeshmukh203/tokenfit/blob/main/CHANGELOG.md"
+
+[project.scripts]
+tokenfit-gui = "tokenfit.gui:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

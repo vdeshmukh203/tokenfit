@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use tokenfit in your research, please cite it as below."
+type: software
+title: "tokenfit: Heuristic token-count estimation for LLM context windows"
+version: "0.2.0"
+date-released: "2026-04-30"
+license: MIT
+repository-code: "https://github.com/vdeshmukh203/tokenfit"
+authors:
+  - family-names: Deshmukh
+    given-names: Vaibhav
+keywords:
+  - large language models
+  - tokenisation
+  - natural language processing
+  - developer tools
+  - Python
+abstract: >
+  tokenfit is a lightweight, pure-Python library that estimates token counts for
+  text and chat-style message lists without making any API calls or loading any
+  model artefact. It uses per-family character-to-token ratios covering all
+  major commercial LLM families and always rounds up so reported counts never
+  under-report.
