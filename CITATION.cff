@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "tokenfit: heuristic token-count estimation for LLM context windows"
+version: 0.1.0
+date-released: "2025-05-05"
+license: MIT
+url: "https://github.com/vdeshmukh203/tokenfit"
+repository-code: "https://github.com/vdeshmukh203/tokenfit"
+keywords:
+  - large language models
+  - token estimation
+  - context window
+  - natural language processing
+  - Python
+authors:
+  - family-names: Deshmukh
+    given-names: Vaibhav
+abstract: >
+  tokenfit is a lightweight, dependency-free Python library that estimates
+  how many tokens a text or chat conversation will consume for a given large
+  language model (LLM). It uses pre-calibrated character-to-token ratios per
+  model family to produce conservative, rounded-up estimates entirely offline
+  and without any API calls. The library supports GPT-3.5, GPT-4, GPT-4-Turbo,
+  GPT-4o, the Claude 3 and 3.5 families, and the Gemini family. A Tkinter
+  desktop GUI is included for interactive exploration.
